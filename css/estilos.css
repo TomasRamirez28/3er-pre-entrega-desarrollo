@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* INDEX PARA CELULAR */
+
+
+/* ESTILOS DEL HEADER */
+
+body {
+    background-color: black
+}
+
+ 
+
+.header {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.img-logo {
+  width: 140px;
+}
+
+
+.titulo {
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.list {
+    background-color: rgb(149, 0, 255);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+a {
+    color: beige;
+}
+
+
+/* ESTILOS DEL MAIN */
+
+main img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.parrafo {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    align-items: center;
+}
+
+.h2 {
+    margin-top: 15px;
+    background-color: rgb(149, 0, 255);
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.texto {
+    margin-top: 10px;
+    width: 70%;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* ESTILOS DEL FOOTER */
+
+footer h3 {
+    margin-top: 50px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+/* ESTILOS DE "LOGROS.html" */
+
+
+
+header {
+    background-color: black;
+}
+
+section div img {
+    width: 40%;
+}
+
+.contenedor-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.ul-nav {
+    margin-right: 20px;
+    display: flex;
+    margin-left: auto;
+    gap: 15px;
+    list-style: none;
+}
+
+
+
+.titulo {
+    margin-top: 30px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.contenedor-logros {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: green;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+}
+
+.ul-logros li {
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+    margin-right: 30px;
+}
+
+.h3-logros {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+.footer-logros {
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 30px;
+}
+
+
+
+/* ESTILOS "SOBRE MI"   PARA CELULARES*/
+
+.h1-sobremi {
+    margin-top: 30px;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.main-sobremi{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+.imagen-sobremi{
+    width: 270px; 
+    border-radius: 20px;
+}
+
+.p-sobremi {
+    font-size: 13px;
+    width: 50%;
+    color: aqua;
+    text-align: center;
+    
+}
+
+
+/* ESTILOS DE EQUIPO.html */
+
+ .titulo-equipo{
+    display: flex;
+   
+ justify-content: center;
+    color: darkturquoise;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+
+}
+
+.contenedor-equipos{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: whitesmoke; 
+    width: 100%;
+    text-align: center;    
+}
+
+.ul-equipos li{
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 15px;
+    color: green;
+    margin-right: 50px;
+
+
+}
+.h3-equipos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* ESTILOS DE SETTINGS */
+
+.contenedor-img-settings{
+    padding: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color: aliceblue;
+    justify-content: center;
+    column-gap: 30px;
+
+    height: 45rem;
+}
+
+.footer-setting{
+    margin-bottom: 3rem;
+}
+
+.green-bg{
+    background-color: rgb(75, 202, 28);
+    color: red;
+}
+
+
+
+/* ESTILOS PARA INDEX NOTEBOOK */
+
+@media screen and (min-width:1024px){
+    .titulo{
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
+
+    .texto{
+        font-size: 1.1rem;
+        width: 40%;
+    }
+
+    .list{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+
+/* ESTILOS PARA "SOBRE-MI" NOTEBOOK */
+
+@media screen and (min-width:1024px){
+
+    .main-sobremi{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+
+    }
+    .p-sobremi{
+        font-size: 1.1rem;
+        width: 20%;
+
+    }
+
+
+
+    .imagen-sobremi{
+        width: 40rem;
+
+    }
+
+    .footer-sobremi{
+        margin-bottom: 40px;
+        margin-top: 40px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BRECHAAAAAAAAAAAA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   body {
+
+    background-color: black
+   
+}
+ */
+/* 
+ ESTILOS DEL HEADER PARA CELULAR 
+ header {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+} */
+
+/* titulo {
+    color: whitesmoke;
+
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+ */
+/* img {
+
+    height: 90px;
+    width: 90px;
+    padding-left: 600px;
+    margin-right: 500px;
+
+} */
+
+
+/* .list {
+    background-color: rgb(149, 0, 255);;
+    display: block;
+    margin: 60px;
+    font-size: 30px;
+    width:300px ;
+    height: 70px;
+    margin-left: 450px;
+   
+    
+   
+}
+.color a{
+    color: beige;
+}
+
+main img {
+
+    height: 400px;
+    width: 100%;
+    padding-left: 0px ;
+    margin-bottom: 20px;
+  
+}
+ */
+/* .parrafo {
+
+    text-align: center;
+    color: whitesmoke;
+}
+.h2{
+    background-color: rgb(149, 0, 255);;;
+    width: 350px;
+    margin-left: 450px;
+
+}
+.texto{
+    width: 600px;
+    padding-left: 310px;
+}
+
+.pie {
+    display: inline-block;
+    color: whitesmoke;
+    background-color: black;
+    padding-left:1100px ;
+    height: 130px;
+    width: 160px;
+    margin-top: 100px;
+    
+
+}
+.pie li {
+    margin: 20px;
+    background-color: rgb(149, 0, 255);;;;
+}
+
+a{
+    color: whitesmoke
+}
+
+.ul-nav{
+    padding-left: 700px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+
+}
+.li-nav{
+    display: inline;
+
+    margin: 30px;
+}
+
+.main-sobremi{
+    display: inline-block;
+}
+.h1-sobremi{
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    padding-left: 70px;
+
+    
+}
+
+.p-sobremi{
+    display: inline-block;
+    color: whitesmoke;
+    width: 300px;
+    padding-left: 30px;
+ 
+}
+
+.imagen-sobremi{
+    display: inline-block;
+    width: 600px;
+    
+}
+
+
+.fotos-main-settings-1 {
+    display: inline-block;
+    width: 600px;
+    margin: 20px;
+ 
+}
+
+.fotos-main-settings-2 {
+    display: inline-block;
+    width: 600px;
+    
+}
+.text-setting {
+    color: whitesmoke;
+    display: inline-block;
+    width: 300px;
+    padding-left:200px ;
+}
+.text-setting-2{
+    color: whitesmoke;
+    display: inline-block;
+    width: 300px;
+    padding-left:300px ;
+}
+
+.contenedor-equipos{
+    color: whitesmoke; 
+    width: 150px;
+    padding-left: 550px;
+    text-align: center;
+    margin-top: 40px;
+      
+}
+
+.ul-equipos li{
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    background-color: rgb(149, 0, 255); 
+    margin: 15px;
+
+}
+.h3-equipos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contenedor-logros{
+    color: green; 
+    width: 150px;
+    padding-left: 550px;
+    text-align: center;
+    margin-top: 40px;
+      
+}
+
+.ul-logros li{
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    color: green; 
+    margin: 15px;
+
+}
+.h3-logros{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+} 
+   
+
+ 
+ */
