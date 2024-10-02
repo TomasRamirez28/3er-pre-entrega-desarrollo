@@ -183,14 +183,6 @@ footer h3 {
 }
 
 /* ESTILOS DE SETTINGS */
-/* .contenedor-img-settings{
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: repeat(2, 1fr);
-    color: $color-tipografia;
-
-}
- */
 .contenedor-p {
   display: flex;
   flex-direction: column;
