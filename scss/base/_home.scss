@@ -1,0 +1,379 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+
+body {
+    background-color: black;
+
+}
+
+
+.contenedor-img {
+    display: flex;
+    justify-content: center
+}
+
+.img-logo {
+    @include medidas(140px, 140px);
+}
+
+/* h1 del index */
+
+.titulo {
+    color: $color-tipografia;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10px;
+}
+
+/* nav */
+.lista {
+    @include flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.list {
+    background-color: rgb(149, 0, 255);
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+/* color de la tipografia nav */
+
+a {
+    color: $color-tipografia;
+}
+
+/* ESTILOS DEL MAIN INDEX*/
+
+main {
+    img {
+        margin-top: 20px;
+        @include medidas (100%, 100%);
+    }
+}
+
+.parrafo {
+    @include flex;
+    align-items: center;
+}
+
+.h2 {
+    color: $color-tipografia;
+    margin-top: 15px;
+    background-color: $color-fondo;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.texto {
+    margin-top: 10px;
+    width: 70%;
+    text-align: center;
+    font-size: 13px;
+    color: $color-secundario;
+}
+
+/* ESTILOS DEL FOOTER */
+
+footer {
+
+    h3 {
+
+        margin-top: 50px;
+        color: $color-tipografia;
+        text-align: center;
+        font-size: 15px;
+        bottom: 0;
+    }
+}
+
+
+/* ESTILOS DE "LOGROS.html" */
+
+.titulo {
+    margin-top: 30px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.contenedor-logros {
+    margin-top: 20px;
+    @include flex;
+    align-items: center;
+    background-color: black;
+    color: green;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+}
+
+.ul-logros {
+    li {
+        list-style-type: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: green;
+        margin-right: 30px;
+    }
+}
+
+.h2-logros {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: $color-tipografia;
+}
+
+
+
+/* ESTILOS "SOBRE MI"   PARA CELULARES*/
+
+.h1-sobremi {
+    margin-top: 30px;
+    color: $color-tipografia;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.main-sobremi {
+    background-color: black;
+    @include flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.imagen-sobremi {
+    width: 270px;
+    border-radius: 20px;
+}
+
+.p-sobremi {
+    font-size: 13px;
+    width: 50%;
+    color: $color-secundario;
+    text-align: center;
+
+}
+
+/* ESTILOS DE EQUIPO.html */
+
+.titulo-equipo {
+    display: flex;
+    justify-content: center;
+    color: $color-secundario;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenedor-equipos {
+    margin-top: 40px;
+    @include flex;
+    align-content: center;
+    justify-content: center;
+    color: $color-tipografia;
+    width: 100%;
+    text-align: center;
+}
+
+.ul-equipos {
+    li {
+        list-style-type: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 15px;
+        color: green;
+        margin-right: 50px;
+    }
+}
+
+.h2-equipos {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* ESTILOS DE SETTINGS */
+
+/* .contenedor-img-settings{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(2, 1fr);
+    color: $color-tipografia;
+     
+}
+ */
+.contenedor-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .lorem {
+        text-align: center;
+        font-size: 14px;
+        color: $color-secundario;
+        width: 80%;
+    }
+}
+
+
+.green-bg {
+    background-color: rgb(23, 237, 126);
+}
+
+
+
+
+
+/* DISEÑO DE TABLET PARA INDEX */
+@media screen and (min-width:600px) {
+
+    .list {
+        font-size: 22px;
+        width: 200px;
+    }
+
+    .titulo {
+        font-size: 60px;
+    }
+
+    main {
+        img {
+            height: 300px;
+        }
+    }
+
+    .h2 {
+        h2 {
+            font-size: 35px;
+        }
+    }
+
+    .texto {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    footer {
+        h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+
+
+
+    /* DISEÑO PARA LOGROS */
+
+    div {
+        .h2-logros {
+            font-size: 30px;
+        }
+    }
+
+    .ul-logros {
+        li {
+            font-size: 20px;
+        }
+    }
+
+
+
+    /* DISEÑO SOBRE MI */
+
+    div {
+        .imagen-sobremi {
+            @include medidas (500px, 500px)
+        }
+    }
+
+    .p-sobremi {
+        margin-top: 20px;
+        width: 80%;
+
+        p {
+
+            font-size: 22px;
+        }
+    }
+
+
+
+    /* DISEÑO EQUIPOS */
+    .titulo-equipo {
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    div {
+        .h2-equipos {
+            font-size: 30px;
+        }
+
+        .ul-equipos {
+            li {
+                font-size: 20px;
+            }
+        }
+    }
+
+    /* DISEÑO SETTINGS */
+
+    .fotos-main-settings-1 {
+        img {
+            @include medidas(100%, 400px)
+        }
+    }
+
+    .fotos-main-settings-2 {
+        img {
+            @include medidas(100%, 400px);
+        }
+    }
+
+    .contenedor-p{
+        .lorem{
+            font-size: 20px;
+
+        }
+    }
+}
+
+
+
+@media screen and (min-width:1250px){
+    /* DISEÑO DE INDEX */
+    main{
+        img{
+            height: 500px;
+        }
+    }
+
+
+
+    /* DISEÑO DE SETTINGS */
+    .contenedor-img-settings{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(2, 1fr);
+        margin: 20px;
+        column-gap: 20px;
+        .fotos-main-settings-2{
+            grid-row: 1/2;
+        }
+        .contenedor-p{
+            grid-column: span 2;
+        }
+    }
+
+
+
+}
