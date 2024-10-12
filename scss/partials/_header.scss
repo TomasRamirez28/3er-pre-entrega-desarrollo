@@ -1,0 +1,43 @@
+
+/* header */
+
+.contenedor-img {
+    display: flex;
+    justify-content: center
+}
+
+.img-logo {
+    @include medidas(140px, 140px);
+}
+
+/* h1 del index */
+
+.titulo {
+    color: $color-tipografia;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10px;
+}
+
+/* nav */
+.lista {
+    @include flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.list {
+    background-color: rgb(149, 0, 255);
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+/* color de la tipografia nav */
+
+a {
+    color: $color-tipografia;
+}
